@@ -1,2 +1,3 @@
-add_executable(print_hello print_hello.cpp)
-target_link_libraries(print_hello PRIVATE tools cxx_setup)
+add_executable(main main.cpp)
+#target_link_libraries(main PRIVATE tools cxx_setup spdlog)
+target_link_libraries(main PRIVATE roughStart cxx_setup spdlog)
