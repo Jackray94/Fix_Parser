@@ -6,6 +6,7 @@ project(Fix_Parser
   )
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -g3 -ggdb")
 
 if(NOT CMAKE_BUILD_TYPE) #<sets the build type to release by default, if its not aleady set from command line
   #set(CMAKE_BUILD_TYPE Release CACHE STRING "" FORCE)
@@ -21,6 +22,7 @@ target_include_directories(cxx_setup INTERFACE ${PROJECT_SOURCE_DIR})
 
 
 include (cmake/UpdateSubmodules.cmake)
+include (cmake/SetupProtobuf.cmake)
 include(CTest)
 
 add_subdirectory(external)

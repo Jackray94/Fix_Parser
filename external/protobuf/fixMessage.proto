@@ -1,0 +1,17 @@
+syntax = "proto2";
+
+package fixIO;
+
+message content {
+  required string beginStringFIXversion = 1;
+  required uint32 bodyLength = 2;
+  required string messageType = 3;
+  required uint32 messageSequenceNum = 4;
+  required string senderCompID = 5;
+  required string targetCompID = 6;
+  required string clientOrderID = 7;
+  required uint32 orderQuantity = 8;
+  required string symbol = 9;
+  required string side = 10;
+  required uint32 checksum = 11;
+}

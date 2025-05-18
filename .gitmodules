@@ -4,3 +4,9 @@
 [submodule "external/spdlog"]
 	path = external/spdlog
 	url = git@github.com:gabime/spdlog.git
+[submodule "install/abseil-cpp"]
+	path = install/abseil-cpp
+	url = git@github.com:abseil/abseil-cpp.git
+[submodule "install/protobuf"]
+	path = install/protobuf
+	url = git@github.com:protocolbuffers/protobuf.git
