@@ -30,7 +30,6 @@ fixIO::content message;
 
 void start()
 {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   //fixIO::content message;
   
