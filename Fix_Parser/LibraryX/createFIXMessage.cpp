@@ -156,7 +156,7 @@ namespace{//impl helpers
   }
 
 
-};
+};//end impl helpers
 
 // std::string_view Message::GenerateMessage()
 // {
